@@ -1,0 +1,13 @@
+RewriteEngine On    # Activer le module Rewrite
+
+RewriteRule ^accueil$ accueil.php
+RewriteRule ^.{0}$ index.php
+RewriteRule ^clientphysiqueV$ src/view/clientparticulier/particulier.php
+RewriteRule ^cliententrepriseV$ src/view/cliententreprise/entreprise.php
+RewriteRule ^compteV$ src/view/Compte/compte.php
+
+
+RewriteRule clientphysiqueC$ src/controller/particulierController.php
+RewriteRule cliententrepriseC$ src/controller/entrepriseController.php
+RewriteRule compteC$ src/controller/compteController.php
+
